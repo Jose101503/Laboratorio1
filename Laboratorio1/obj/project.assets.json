@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jose\\source\\repos\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj",
+      "projectUniqueName": "C:\\Users\\Jose\\Documents\\GitHub\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj",
       "projectName": "Laboratorio1",
-      "projectPath": "C:\\Users\\Jose\\source\\repos\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj",
+      "projectPath": "C:\\Users\\Jose\\Documents\\GitHub\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj",
       "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jose\\source\\repos\\Laboratorio1\\Laboratorio1\\obj\\",
+      "outputPath": "C:\\Users\\Jose\\Documents\\GitHub\\Laboratorio1\\Laboratorio1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

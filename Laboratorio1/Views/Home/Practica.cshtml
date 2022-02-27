@@ -1,0 +1,86 @@
+﻿
+@{ ViewData["Title"] = "Programa para calcular porcentaje final de su materia";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h1>Calcular Promedio</h1>
+
+
+<form asp-controller="Home" asp-action="Practica">
+
+    <div class="card">
+        <label> DATO 1</label>
+
+        @if (ViewBag.DatoN1V == 0)
+        {
+
+    <input type="number" placeholder="Escribe la primer nota de laboratorio" name="DatoN1" /> }
+else
+{
+    <input type="number" placeholder="Escribe la primer nota de laboratorio" name="DatoN1" value="@ViewBag.DatoN1V" class="form-control" />}
+
+
+
+        <label> DATO 2</label>
+
+
+        @if (ViewBag.DatoN2V == 0)
+        {
+
+    <input type="number" placeholder="Escribe la primer nota del parcial" name="DatoN2" class="form-control" min="0" max="10" /> }
+else
+{
+    <input type="number" placeholder="Escribe la primer nota del parcial" name="DatoN2" value="@ViewBag.DatoN2V" class="form-control" />}
+
+
+        <label> DATO 3</label>
+
+        @if (ViewBag.DatoN3V == 0)
+        {
+
+    <input type="number" placeholder="Escribe la segunda nota de laboratorio" name="DatoN3" class="form-control" min="0" max="10" /> }
+else
+{
+    <input type="number" placeholder="Escribe la segunda nota de laboratorio" name="DatoN3" value="@ViewBag.DatoN3V" class="form-control" />}
+
+        <label> DATO 4</label>
+
+        @if (ViewBag.DatoN4V == 0)
+        {
+
+    <input type="number" placeholder="Escribe la segunda nota del parcial" name="DatoN4" class="form-control" min="0" max="10" /> }
+else
+{
+    <input type="number" placeholder="Escribe la segunda nota del parcial" name="DatoN4" value="@ViewBag.DatoN4V" class="form-control" />}
+
+        <label> DATO 5</label>
+
+        @if (ViewBag.DatoN5V == 0)
+        {
+
+    <input type="number" placeholder="Escribe la tercera nota del laboratorio" name="DatoN5" class="form-control" min="0" max="10" /> }
+else
+{
+    <input type="number" placeholder="Escribe la tercera nota del laboratorio" name="DatoN5" value="@ViewBag.DatoN5V" class="form-control" />}
+
+
+        <label> DATO 6</label>
+
+        @if (ViewBag.DatoN6V == 0)
+        {
+
+    <input type="number" placeholder="Escribe la tercera nota del parcial" name="DatoN6" class="form-control" min="0" max="10" /> }
+else
+{
+    <input type="number" placeholder="Escribe la tercera nota del parcial" name="DatoN6" value="@ViewBag.DatoN6V" class="form-control" />}
+
+        <div>
+            <button class="btn btn-primary">Calcular Promedio</button>
+        </div>
+        <label>Resultado</label>
+        <label> @ViewBag.VariableAEnviar </label>
+
+    </div>
+
+
+ 
+</form>

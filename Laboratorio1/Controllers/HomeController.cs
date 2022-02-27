@@ -33,5 +33,18 @@ namespace Laboratorio1.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult Practica(Double DatoN1,Double DatoN2, Double DatoN3, Double DatoN4, Double DatoN5, Double DatoN6)
+        {
+            Double resultado = DatoN1 + DatoN2 + DatoN3 + DatoN4 + DatoN5 + DatoN6;
+            Double resultadofinal =resultado / 6;
+            ViewBag.DatoN1V = DatoN1;
+            ViewBag.DatoN2V = DatoN2;
+            ViewBag.DatoN3V = DatoN3;
+            ViewBag.DatoN4V = DatoN4;
+            ViewBag.DatoN5V = DatoN5;
+            ViewBag.DatoN6V = DatoN6;
+            ViewBag.VariableAEnviar = resultadofinal;
+            return View();
+        }
     }
 }
